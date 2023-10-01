@@ -23,18 +23,21 @@ const Category = () => {
   }, []);
 
   const settings = {
-    infinite: false,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 1000,
     arrows: true,
+    autoplay:true,
+    autoplaySpeed:3000,
   };
 
   return (
-    <div className="categoryContainer">
-      <div className="categoryHeading">
+    <div className="mainCat">
+    <div className="categoryHeading">
         <h2>New products</h2>
       </div>
+    <div className="categoryContainer">
       <div className="productCategory">
         <ul>
           <li>Apparel</li>
@@ -60,6 +63,7 @@ const Category = () => {
           </Slider>
         </div>
       )}
+    </div>
     </div>
   );
 };

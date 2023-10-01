@@ -35,28 +35,34 @@
 
 /* header */
 
-.nav-list {
+
+
+  nav img{
+    margin-left: 50px;
+  }
+
+  .nav-list ul{
+    cursor: pointer;
     display: flex;
+    background-color: black;
     list-style: none;
     color: white;
     font-family: 'syne';
     gap: 100px;
     margin-left: 100px;
   }
-
-  nav img{
-    margin-left: 50px;
-  }
-
-  ul{
-    cursor: pointer;
-  }
   
   .dropdown{
     display: flex;
+    width: 30px;
     flex-direction: column;
     left: 0;
     cursor: pointer;
+    text-align: center; 
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .dropdown li {
@@ -64,21 +70,10 @@
     width: 100px;
     display: flex;
     flex-direction: column;
-  }
-
-  .dropdown {
-    text-align: center; 
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .dropdown li {
     line-height: 2; 
     cursor: pointer;
   }
-
-
+  
 
   /* main page */
   .imageContainer {
@@ -87,15 +82,7 @@
     height: 100vh; 
   }
   
-  /* .img1 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  } */
+
   
   .img2 {
     width: 100%;
@@ -118,53 +105,74 @@
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 3; 
   } */
-  
-
-  .bannerText{
-    color: white;
-    font-family: 'syne';
-  }
-
-  .bannerText h1{
+  .banner1Img{
     position: absolute;
-    font-size: 7rem;
-    font-weight: 800;
+    margin-top: 120px;
+    margin-left: 70px;
+    z-index: 2;
   }
-  
-  .bannerText h3{
-    font-weight: 800;
-    font-size: 5rem;
+  .banner2Img{
     position: absolute;
+    margin-top: 250px;
+    margin-left: 400px;
+    z-index: 2;
   }
+  .banner3Img{
+    position: absolute;
+    margin-top: 350px;
+    z-index: 2;
+    margin-left: 120px;
+  } 
 
-
+ 
   /* category page */
-
+.mainCat{
+  background-color: white;
+  font-family: 'syne';
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 60px;
+  overflow: hidden;
+}
   .categoryContainer{
-    background-color: white;
+    display: flex;
     height: 100%;
     margin-left: 25px;
     margin-right: 25px;
   }
 
   .categoryHeading{
-    font-family: 'syne';
     font-weight: 600;
     font-size: 30px ;
   }
 
-.productCategory{
-display: flex;
+  
+
+.productCategory ul{
+  list-style: none;
+  padding-top: 20px;
+  padding-right: 60px;
+  font-weight: bold;
+} 
+
+.productCategory ul li{
+  padding-bottom: 10px;
+
 }
 
   .productSlider {
     width: 100%;
     height: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  
   }
+
   
   .slick-slide {
     padding: 0 10px;
     box-sizing: border-box;
+    /* width: 50%; */
   }
   
   
@@ -172,6 +180,7 @@ display: flex;
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
+
   }
 
   .title {
@@ -187,7 +196,7 @@ display: flex;
   .desc {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Adjust the number of lines as needed */
+    -webkit-line-clamp: 2; 
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     margin: 0;
@@ -205,7 +214,7 @@ display: flex;
   text-align: left;
 }
   
-  /* Customize the arrow styles */
+ 
   .slick-arrow {
     position: absolute;
     top: 50%;
@@ -297,22 +306,28 @@ form input,#message{
   }
 
 
-.lastText{
+  .lastText {
     display: flex;
+    color: white;
     flex-direction: column;
     font-size: 7rem;
     font-family: syne;
     font-weight: 800;
     padding-left: 100px;
-}
+    width: 100%;
+  }
 
-h5{
-    font-family: syne;
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-    line-height: 2px;
-    line-break: auto;
+.copyright {
+  background-color: black;
+  font-family: syne;
+  height: 66px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright h5{
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
 }

@@ -8,9 +8,9 @@ const Header = () => {
   };
 
   return (
-    <nav>
+    <nav className="nav-list">
       <img src={Border} alt="border" />
-      <ul className="nav-list">
+      <ul>
         <li>HOME</li>
         <li>ABOUT</li>
         <li>

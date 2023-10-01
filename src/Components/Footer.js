@@ -80,7 +80,9 @@ function Footer() {
           </div>
 
           <div className="btn">
-            <button type="submit" className="circular-button">SEND</button>
+            <button type="submit" className="circular-button">
+              SEND
+            </button>
           </div>
         </form>
       </div>
@@ -89,8 +91,9 @@ function Footer() {
         <span>GET</span>
         <span> IN TOUCH</span>
       </div>
-
-      <h5>Copyright {currentYear} All rights reserved By SG</h5>
+      <div className="copyright">
+        <h5>Copyright {currentYear} All rights reserved By SG</h5>
+      </div>
     </footer>
   );
 }
