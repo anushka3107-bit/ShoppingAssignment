@@ -37,6 +37,7 @@ const Category = () => {
     <div className="categoryHeading">
         <h2>New products</h2>
       </div>
+      <img className="thinLine" src={ThinLine}></img>
     <div className="categoryContainer">
       <div className="productCategory">
         <ul>
