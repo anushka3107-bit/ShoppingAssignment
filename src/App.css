@@ -1,38 +1,318 @@
-.App {
-  text-align: center;
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'syne';
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-left: 100px;
+    padding-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+    
+    font-family: 'syne';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.prodDetails{
+    display: flex;
+    font-family: 'syne';
+    /* font-size: 10px; */
+    padding-right: 100px;
+}
+
+.prodDetails ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+/* header */
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-family: 'syne';
+    gap: 100px;
+    margin-left: 100px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  nav img{
+    margin-left: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  ul{
+    cursor: pointer;
   }
+  
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    cursor: pointer;
+  }
+
+  .dropdown li {
+    list-style-type: none;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown {
+    text-align: center; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown li {
+    line-height: 2; 
+    cursor: pointer;
+  }
+
+
+
+  /* main page */
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+  }
+  
+  /* .img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  } */
+  
+  .img2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  /* Adding a black overlay to img1 */
+  /* .img1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 3; 
+  } */
+  
+
+  .bannerText{
+    color: white;
+    font-family: 'syne';
+  }
+
+  .bannerText h1{
+    position: absolute;
+    font-size: 7rem;
+    font-weight: 800;
+  }
+  
+  .bannerText h3{
+    font-weight: 800;
+    font-size: 5rem;
+    position: absolute;
+  }
+
+
+  /* category page */
+
+  .categoryContainer{
+    background-color: white;
+    height: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .categoryHeading{
+    font-family: 'syne';
+    font-weight: 600;
+    font-size: 30px ;
+  }
+
+.productCategory{
+display: flex;
+}
+
+  .productSlider {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slick-slide {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  .product img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: large;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Adjust the number of lines as needed */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 100;
+  }
+
+  .price {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: large;
+  text-overflow: ellipsis;
+  margin: 0;
+  text-align: left;
+}
+  
+  /* Customize the arrow styles */
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 24px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .slick-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+
+
+  /* footer */
+footer{
+    color: white;
+    background-image: url('image/18591063.png');
+
+}
+
+.heading h2{
+    font-size: 20px;
+    font-family: 'syne';
+    margin-top: 100px;
+}
+   
+.heading p{
+    font-family: 'syne';
+    padding-top: 0;
+}
+
+.mainDiv{
+    display: flex;
+    padding-left: 100px;
+    color: gray;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-left: 200px;
+    
+}
+
+form input,#message{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    resize: none;
+    background: transparent;
+}
+
+
+.circular-button {
+    border-radius: 50%; 
+    width: 150px; 
+    height: 150px; 
+    border: 1px solid orange; 
+    background-color: transparent; 
+    letter-spacing: 2px;
+    color: orange; 
+    font-size: 20px; 
+    cursor: pointer;
+    position: absolute;
+    right: 250px;
+    margin-top: 50px;
+  }
+
+
+.lastText{
+    display: flex;
+    flex-direction: column;
+    font-size: 7rem;
+    font-family: syne;
+    font-weight: 800;
+    padding-left: 100px;
+}
+
+h5{
+    font-family: syne;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    line-height: 2px;
+    line-break: auto;
 }
