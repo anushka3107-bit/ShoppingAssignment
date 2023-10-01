@@ -130,8 +130,8 @@
   font-family: 'syne';
   width: 100%;
   height: 800px;
-  padding-top: 50px;
-  padding-left: 60px;
+  padding-top: 50px; 
+   padding-left: 60px;
   overflow: hidden;
 }
   .categoryContainer{
@@ -166,7 +166,7 @@
     width: 100%;
     height: 100%;
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   
   }
   
@@ -178,21 +178,28 @@
   }
   
   
-  .product {
-    text-align: center;
-    padding: 20px; /* Increase the padding to increase the height of the product box */
-    border: 1px solid #ddd;
-    background-color: #fff; /* White background for individual products */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for individual products */
-    border-radius: 5px;
-    margin: 10px; /* Add margin to separate products */
-  }
-  
-  .product img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
+ 
+.product {
+  text-align: center;
+  width: 250px; 
+  height: 250px; 
+  margin: 0 10px 20px 10px;
+  border: 1px solid #ddd;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+  border-radius: 5px;
+
+}
+
+.product img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 100px;
+  max-height: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
   .title {
     font-weight: bold;
@@ -202,6 +209,7 @@
     text-overflow: ellipsis;
     margin: 0;
     padding-bottom: 10px;
+    text-transform: uppercase;
   }
 
   .desc {
@@ -213,6 +221,7 @@
     margin: 0;
     margin-bottom: 10px;
     font-weight: 100;
+    color: gray;
   }
 
   .price {
@@ -223,6 +232,7 @@
   text-overflow: ellipsis;
   margin: 0;
   text-align: left;
+  text-align: center;
 }
   
  
@@ -237,7 +247,7 @@
     border: 1px solid #ddd;
     border-radius: 50%;
     padding: 10px;
-    transition: background 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
   
   .slick-arrow:hover {
@@ -342,3 +352,7 @@ form input,#message{
   font-size: 12px;
   font-weight: 400;
 }
+
+
+
+
